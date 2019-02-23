@@ -1,0 +1,23 @@
+{% extends 'services/base.html' %}
+{% load staticfiles %}
+{% block content %}
+  <img src="{% static 'images/schemes/recurring.png'%}" alt="recurring Account">
+  <br><br>
+  <h1>Terms & Conditions</h1>
+  <div class="jumbotron">
+    <ol style="font-family:'Comic Sans MS', cursive, sans-serif; font-size:1.3em;">
+      <li>It is mandatory to be a member in the company.</li>
+      <li>Company will issue ten shares (10/- each) for RD Plan.</li>
+      <li>Recurring deposit minimum amount  500/-, thereafter in multiples of  100/.</li>
+      <li>1 month after paying last installment or maturity amount due date whichever is more will be applicable for payment of maturity amount.</li>
+      <li>Irregular deposits are not entitled for pre-mature payment and loan facility against it.</li>
+      <li>On irregular deposit if all irregular pending deposits are paid then such account will be treated as regular. Even if there is default in payment of 1st installment, the said account will be treated as irregular.</li>
+      <li>After maturity date, payment on irregular accounts will be made after deducting the penalty amount maximum to the limit of interest limit earned on such account. No deductions will be made on principle amount of such accounts</li>
+      <li>R.D. will not be pre-mature within first 3 month.</li>
+      <li>If R.D is matured after 3 month but before 6 month no interest will be paid.</li>
+      <li>After depositing the premium of 6 months, any type of intrest will not be given.</li>
+      <li>If any person pre-mature its R.D. then the person will be paid 2%, less of maturity intrest after 6 months to 60th months.</li>
+    </ol>
+
+  </div>
+  {% endblock %}

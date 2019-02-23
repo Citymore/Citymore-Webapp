@@ -1,0 +1,181 @@
+{% extends 'services/base.html' %}
+<!-- {% load staticfiles %} -->
+{% block content %}
+<html>
+  <head>
+    <title>Citymore Nidhi Ltd</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <!-- <link rel="stylesheet" href="{% static 'css/style.css' %}"> -->
+    <style>
+    .mySlides {display:none;}
+    </style>
+  </head>
+  <body>
+    <!-- start -->
+    <div class="slider" id="slider">
+            <!-- slider -->
+
+            <div class="slider-img"><img src="{% static 'images/family.jpg' %}" alt="Citymore Nidhi Limited" class="">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="slider-img"><img src="{% static 'images/schemes.jpg' %}" alt="Citymore Nidhi Limited" class="">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+                                <div class="slider-captions">
+                                    <!-- slider-captions -->
+                                    <!-- <h1 class="slider-title text-highlight" style="color:#000;">Loans are Available.<br>at Citymore Nidhi Limited</h1> -->
+                                    <!-- <p class="slider-text hidden-xs" style="color:#000;"> We provide Loans. Visit us for more details.</p> -->
+                                    <!-- <a href="#" class="btn btn-default hidden-xs" style="color:#000;">Check Eligiblity</a></div> -->
+                                <!-- /.slider-captions -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+
+            </div>
+        </div>
+<!-- end -->
+        <div class="section-space80">
+            <div class="container">
+              <!-- <div class="jumbotron"> -->
+                <div class="row">
+                    <!-- <div class="col-md-offset-2 col-md-8 col-sm-12 col-xs-12"> -->
+                        <div class="mb20 text-center section-title">
+                            <!-- section title start-->
+                            <div class="jumbotron">
+                              <h1>Find Loan Products We Offer</h1>
+                              <p>We will match you with a loan program that meet your financial need. In short term liquidity, by striving to make funds available to them <strong>within 24 hours of application.</strong></p>
+                            </div>
+
+                        </div>
+                        <!-- /.section title start-->
+                    <!-- </div> -->
+                </div>
+              <!-- </div> -->
+
+                <div class="row">
+                    <div class="service" id="service">
+
+
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="bg-white pinside40 service-block outline mb30">
+                                <div class="icon mb40"> <img src="{% static 'images/deposit.png' %}" alt="Citymore Nidhi Limited" class="icon-svg-2x"></div>
+                                  <h2>Loan Against Deposit</h2>
+                                  <p style="font-family:'Comic Sans MS', cursive, sans-serif; font-size:1.2em;">Loan against deposit is given in the form of an overdraft against your deposited amount. This is an alternative given to you instead of breaking the deposit prematurely.<br><br></p>
+                                  <a href="{% url 'services:loanagainstdeposit' %}" class="btn-link" target="_blank">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="bg-white pinside40 service-block outline mb30">
+                                <div class="icon mb40"> <img src="{% static 'images/gold.png' %}" alt="Citymore Nidhi Limited" class="icon-svg-2x"></div>
+                                <h2>Gold Loan</h2>
+                                <p style="font-family:'Comic Sans MS', cursive, sans-serif; font-size:1.2em;">Gold Loan offers you quick and easy financing at attractive interest rates. The loan pupose is to meet urgent financial needs. Any individual who is the true owner of the ornaments can apply for this loan.</p>
+                                <a href="{% url 'services:gold' %}" class="btn-link" target="_blank">Read More</a>
+                        </div>
+                    </div>
+                <div class="row">
+                    <div class="service" id="service">
+
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="bg-white pinside40 service-block outline mb30">
+                                <div class="icon mb40"> <img src="{% static 'images/group.png' %}" alt="Citymore Nidhi Limited" class="icon-svg-2x"></div>
+                                <h2>Group Loan</h2>
+                                <p style="font-family:'Comic Sans MS', cursive, sans-serif; font-size:1.2em;">The group loan is a business credit facility that is designed to finance groups of 5 to 10 entrepreneurs. This loan is provided to groups of entrepreneurs with valid individual businesses. No collateral needed. Guarantorship from group members. </p>
+                                <a href="{% url 'services:group' %}" class="btn-link" target="_blank">Read More</a>
+                            </div
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="bg-white pinside40 service-block outline mb30">
+                                <div class="icon mb40"> <img src="{% static 'images/personal.png' %}" alt="Citymore Nidhi Limited" class="icon-svg-2x"></div>
+                                <h2>Personal Loan</h2>
+                                <p style="font-family:'Comic Sans MS', cursive, sans-serif; font-size:1.2em;">For managing your finance and acts as an impetus in putting your plans into actions then a personal loan is a great tool for it. Our range of personal loans are simple and flexible, designed with your changing needs in mind. </p>
+                                <a href="{% url 'services:personal' %}" class="btn-link" target="_blank">Read More</a>
+                            </div>
+                        </div>
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="bg-white pinside40 service-block outline mb30">
+                                <div class="icon mb40"> <img src="{% static 'images/government.png' %}" alt="Citymore Nidhi Limited" class="icon-svg-2x"></div>
+                                <h2>Loan Against Govt. Securities</h2>
+                                <p style="font-family:'Comic Sans MS', cursive, sans-serif; font-size:1.2em;">Govt. securities, PSU Bonds, Securities/Relief Bonds issued by RBI/SBI/ICICI/IDBI, NSCs, LIC Policies of LIC of India or other such securities transferable/assignable to the Company.</p>
+                                <a href="{% url 'services:loanagainstgovtsec' %}" class="btn-link" target="_blank">Read More</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="bg-white section-space80">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-offset-2 col-md-8">
+                        <div class="mb60 text-center section-title">
+
+                            <h1>Our Schemes</h1>
+                            <p style="font-family:'Comic Sans MS', cursive, sans-serif; font-size:1.2em;">We offer multiple types of schemes</p>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 col-sm-12 col-xs-12">
+                        <div class="bg-white">
+                            <div class="row">
+                                <div class="col-md-3 col-sm-6 nopadding col-xs-12">
+                                    <div class="bg-white pinside60 number-block outline">
+                                        <div class="mb20"><img src="{% static 'images/schemes/fd.png' %}"></div>
+                                        <h3 title="Fixed Deposit">Fixed Deposit</h3>
+                                        <!--<p>Fixed deposits are safer and more secure form of investments than other conventional modes of investments available in the market. </p>-->
+                                        <a href="{% url 'services:fixed' %}" class="btn btn-outline mt20" target="_blank">Read More</a> </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 nopadding col-xs-12">
+                                    <div class="bg-white pinside60 number-block outline">
+                                        <div class="mb20"><img src="{% static 'images/schemes/rd.png' %}"></div>
+                                        <h3 title="Recurring Deposit">Recurring&nbsp;Deposit</h3>
+                                        <!--<p>Recurring Deposit (RD) is a special kind of term deposit by Nidhi which caters the need of saving for the members with a regular income by making them deposit a fixed amount regularly.</p>-->
+                                        <a href="{% url 'services:recurring' %}" class="btn btn-outline mt20" target="_blank">Read More</a> </div>
+                                </div>
+                                <div class="col-md-3 col-sm-12 nopadding col-xs-12">
+                                    <div class="bg-white pinside60 number-block outline">
+                                        <div class="mb20"><img src="{% static 'images/schemes/sa2.png' %}"></div>
+                                        <h3 title="Savings Account">Savings Account</h3>
+                                        <!--<p> Savings accounts are the most common and popular account services; you would have already worked upon.</p>-->
+                                        <a href="{% url 'services:saving' %}" class="btn btn-outline mt20" target="_blank">Read More</a> </div>
+                                </div>
+                                <div class="col-md-3 col-sm-6 nopadding col-xs-12">
+                                    <div class="bg-white pinside60 number-block outline">
+                                        <div class="mb20"><img src="{% static 'images/schemes/mis.png' %}"></div>
+                                        <h3 title="Monthly Income Service">MIS</h3>
+                                        <!--<p>Citymore Nidhi India Limited introduced one of the finest monthly income plan in Rewari with the coverage of good monthly income interest rates.</p>-->
+                                        <a href="{% url 'services:monthly' %}" class="btn btn-outline mt20" target="_blank">Read More</a> </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /.tiny footer -->
+        <!-- back to top icon -->
+
+
+  </body>
+</html
+
+{% endblock %}
